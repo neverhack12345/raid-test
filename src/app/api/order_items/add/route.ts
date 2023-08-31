@@ -7,8 +7,6 @@ export async function POST(req: NextRequest, res) {
     const payload = await req.json()
     const order = payload.data.insertId
     const cart = payload.cart
-    console.log(order)
-    console.log(cart)
     const db = await open({
       filename: './database.db',
       driver: sqlite3.Database,
