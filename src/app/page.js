@@ -42,7 +42,7 @@ export default function Home() {
             <TableHead>
               <TableRow key={"product_header"}>
                 {productColumnHeader.map((column) => (
-                  <TableCell>{column}</TableCell>
+                  <TableCell key={column}>{column}</TableCell>
                 ))}
               </TableRow>
             </TableHead>
@@ -72,7 +72,7 @@ export default function Home() {
             <TableHead>
               <TableRow key={"product_header"}>
                 {cartColumnHeader.map((column) => (
-                  <TableCell>{column}</TableCell>
+                  <TableCell key={column}>{column}</TableCell>
                 ))}
               </TableRow>
             </TableHead>
